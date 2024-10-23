@@ -1,14 +1,17 @@
-void main() {
-  print('First Lab Dart Installation');
-  print('Lab Practice');
 
-//   var variable = 10;
-// print(variable);
+import 'package:flutter/material.dart';
+import 'package:flutter_application_1/Currency_converter_material_page.dart';
 
-// dynamic variable = 10;
-// print(variable + 25);
+void main(){
+  runApp( mob() );
+}
 
-String variable = "Usman";
-print(variable);
-
+class mob extends StatelessWidget{
+  const mob ({super.key});
+  @override
+  Widget build (BuildContext context){
+    return MaterialApp(
+      home: CurrencyConverterPage(),
+    );
+  }
 }
